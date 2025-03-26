@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Cumpleaños</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url(romeo2.jpg); /* Cambia esto por la ruta de tu imagen */
+            
+            background-position: center; /* Centra la imagen */
+            text-align: center;
+            overflow: hidden;
+            color: black; /* Cambia el color de la letra a negro para el texto normal */
+            font-family: 'Arial', sans-serif; /* Cambia la tipografía (puedes elegir otra) */
+        }
+        h1 {
+            color: red; /* Cambia el color del título a rojo */
+        }
+        .container {
+            position: absolute; /* Cambia a posición absoluta */
+            top: 50%; /* Coloca el contenido en la mitad vertical */
+            left: 50%; /* Centra horizontalmente */
+            transform: translate(-50%, -50%); /* Ajusta el centrado */
+            text-align: center; /* Asegura que el texto esté centrado */
+        }
+        .balloon {
+            position: absolute;
+            bottom: -100px;
+            width: 50px;
+            height: 70px;
+            background-color: #ff4757;
+            border-radius: 50px 50px 0 0;
+            animation: float 5s infinite;
+        }
+        .balloon:nth-child(2) {
+            background-color: #1e90ff;
+            left: 20%;
+            animation-duration: 6s;
+        }
+        .balloon:nth-child(3) {
+            background-color: #2ed573;
+            left: 40%;
+            animation-duration: 7s;
+        }
+        .balloon:nth-child(4) {
+            background-color: #ffa502;
+            left: 60%;
+            animation-duration: 8s;
+        }
+        .balloon:nth-child(5) {
+            background-color: #ff6348;
+            left: 80%;
+            animation-duration: 9s;
+        }
+        @keyframes float {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-200px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="display-4">¡Feliz Cumpleaños!</h1>
+        <p class="lead">¡Feliz cumpleaños, cielo! 🎉💖  <br>
+            Hoy es tu día, así que prepárate para ser el centro de atención (aunque, seamos sinceros, para mí siempre lo eres 😏). Espero que tu día esté lleno de alegría, risas y, por supuesto, mucho pastel… aunque si necesitas alguien que te ayude a comerlo, ya sabes que aquí estoy.  
+            Eres casi todo lo que me gusta en una persona… bueno, en realidad, eres todo, pero todavía no quiero asustarte con declaraciones demasiado serias. 😜 Que este año te traiga todo lo que deseas, porque si alguien lo merece, eres tú.  
+            ¡Disfruta muchísimo, preciosa! 💫🎂✨</p>
+        <div class="balloon" style="animation-delay: 0s;"></div>
+        <div class="balloon" style="animation-delay: 1s;"></div>
+        <div class="balloon" style="animation-delay: 2s;"></div>
+        <div class="balloon" style="animation-delay: 3s;"></div>
+        <div class="balloon" style="animation-delay: 4s;"></div>
+    </div>
+
+    <audio controls>
+        <source src="Musica e imagenes/Aventura_ MI CORAZONCITO  LETRA.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+</body>
+</html>
